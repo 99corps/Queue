@@ -22,13 +22,15 @@ var myQ = new Queue([1,2,3,4]);
 myQ.add('new item to add');
 ```
 
-#### Remove items from the Queue
-`.remove()` removes and returns the item from the front of the Queue
+#### Get the next item in the Queue
+`.next()` removes and returns the item from the front of the Queue
 
 ```javascript
-var firstItem = myQ.remove();
-console.log(firstItem);
-//1
+myQ.next();
+//returns 1
+
+myQ.next();
+//now returns 2
 ```
 
 #### Get Queue size
@@ -47,8 +49,11 @@ returns a boolean `true` if the Queue is empty else `false`
 //view the item in front
 myQ.peek();
 
-//view the second item
+//view the second item in the Queue
 myQ.peek(1);
+
+//view the third item in the Queue
+myQ.peek(2);
 ```	
 
 #### Clear the Queue

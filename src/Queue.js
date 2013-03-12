@@ -31,7 +31,7 @@
       return this;
     };
 
-    Queue.prototype.remove = function() {
+    Queue.prototype.next = function() {
       return this.list.shift();
     };
 

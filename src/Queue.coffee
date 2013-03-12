@@ -19,7 +19,7 @@ class Queue
     @list.push(func)
     @
 
-  remove:() ->
+  next:() ->
     @list.shift()
 
   clear: (func) ->
